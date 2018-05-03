@@ -46,7 +46,7 @@ def max_update(alphamatrix,R,S):
 
 # Uniform update function
 
-def Uniform_update(R,S,alphamatrix,E):
+def uniform_update(R,S,alphamatrix,E):
 
 	for rows in R:
 		for cols in S:
