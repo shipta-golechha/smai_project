@@ -152,7 +152,7 @@ def AvgPLoss(relevant, ranking):
 		for otherTopic in rel_ranking_dict.keys():
 			if rel_ranking_dict[topic] >= rel_ranking_dict[otherTopic]:
 				x = x + 1
-			sum = sum + x /  rel_ranking_dict[topic])
+			sum = sum + x /  rel_ranking_dict[topic]
 
 	sum = sum / len(relevant)
 
