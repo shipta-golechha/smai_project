@@ -5,8 +5,7 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from collections import Counter
 import sklearn
-from sklearn.feature_extraction.text import TfidfTransformer
-from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.feature_extraction.text import *
 from nltk.stem.porter import PorterStemmer
 import operator
 import string
@@ -307,6 +306,7 @@ def test(w,tfidfvalues,fileids):
 		val_avg = val_avg + float(count_x)/float(count)        
 	 
 	val_avg = val_avg/len(fileids)
+	print val_avg
 	
 	return val_avg
 
