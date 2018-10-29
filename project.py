@@ -3,13 +3,15 @@ from nltk.corpus import reuters
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
-from collections import Counter
+# from collections import Counter
 import sklearn
 from sklearn.feature_extraction.text import TfidfTransformer
 from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.stem.porter import PorterStemmer
 import operator
 import string
+import re
+import os
 
 # Margin proportional update
 
@@ -307,6 +309,7 @@ def test(w,tfidfvalues,fileids):
 		val_avg = val_avg + float(count_x)/float(count)        
 	 
 	val_avg = val_avg/len(fileids)
+	print val_avg
 	
 	return val_avg
 
